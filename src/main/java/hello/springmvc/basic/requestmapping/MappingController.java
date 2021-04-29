@@ -11,7 +11,7 @@ public class MappingController {
     private Logger log = LoggerFactory.getLogger(getClass());
 
     @RequestMapping(value = "/hello-basic", method = RequestMethod.GET)
-    public String helloBasci() {
+    public String helloBasic() {
         log.info("helloBasic");
         return "ok";
     }
@@ -36,7 +36,7 @@ public class MappingController {
 
     /**
      * 파라미터로 추가 매핑
-     * params="mode",
+     * params="mode"
      * params="!mode"
      * params="mode=debug"
      * params="mode!=debug" (! = )
@@ -50,7 +50,7 @@ public class MappingController {
 
     /**
      * 특정 헤더로 추가 매핑
-     * headers="mode",
+     * headers="mode"
      * headers="!mode"
      * headers="mode=debug"
      * headers="mode!=debug" (! = )
